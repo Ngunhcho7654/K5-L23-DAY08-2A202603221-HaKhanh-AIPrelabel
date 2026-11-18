@@ -22,7 +22,7 @@ def main() -> None:
             for a in tax.attrs.values():
                 attrs.append({"name": a["name"], "mutable": False, "input_type": a["type"],
                               "default_value": str(a.get("default", "")),
-                              "values": [str(v) for v in a.get("values", [])] if a["type"] == "select" else []})
+                              "values": [str(v) for v in a.get("values", [])] if a["type"] == "select" else [str(a.get("default", ""))]})
         # type "any": cho phép cả rectangle (detection) và polygon (segmentation) trong cùng Project
         labels.append({"name": name, "color": "#808080" if name == tax.ignore else COLORS[i % len(COLORS)],
                        "type": "any", "attributes": attrs})
