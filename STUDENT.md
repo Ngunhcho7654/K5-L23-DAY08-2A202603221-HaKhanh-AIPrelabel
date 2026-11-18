@@ -5,9 +5,9 @@
 - Lớp (L2 / L3 / khác): K5-L23
 - Tài khoản GitHub: Ngunhcho7654
 - Repo bài nộp (URL): https://github.com/Ngunhcho7654/K5-L23-DAY08-2A202603221-HaKhanh-AIPrelabel
-- Commit chốt bài (hash): nhánh main (cập nhật hoàn tất Part 6 sau commit 73edd60)
+- Commit chốt bài (hash): nhánh main (sau commit 73edd60)
 - Máy: Windows 11, RAM 16 GB, CPU (NVIDIA GTX 960M 2 GB VRAM, chạy torch CPU)
-- CVAT (Docker): CVAT Docker local (http://localhost:8080)
+- CVAT (Docker): CVAT Docker chạy local tại http://localhost:8080
 
 ## Kết quả tóm tắt (điền cuối bài; số lấy từ `submission/qc/*`, kèm mẫu số)
 
@@ -16,4 +16,4 @@
 - Bắt bẫy: 4/12 = 33.3%
 - Thời gian: gán tay 3.75 phút/ảnh (15 phút / 4 ảnh); duyệt có pre-label 0.83 phút/ảnh (20 phút / 24 ảnh)
 - Lỗi QC: 100.0% theo ảnh (5/5), 11.3% theo đối tượng (8/71)
-- **Quyết định:** Rework — lý do một dòng: Bắt bẫy chỉ đạt 4/12 = 33.3% (< 80%), ảnh mẫu QC có lỗi 5/5 = 100.0% (> 2%) và còn lỗi hệ thống box thừa/trùng ('thua' 5/8 lỗi).
+- **Quyết định:** Rework — lý do một dòng: Bắt bẫy chỉ đạt 4/12 = 33.3% (< 80%), ảnh mẫu QC dính lỗi 5/5 = 100.0% (> 2%) và lặp lại lỗi box thừa/trùng ('thua' 5/8 lỗi).
